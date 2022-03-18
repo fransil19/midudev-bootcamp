@@ -1,15 +1,15 @@
 import React from 'react'
 
-const Note = ({ categories= [], content, date }) => {
+const Note = ({ title , body}) => {
   return (
     <li>
-      <p>{content}</p>
+      <p>{title}</p>
       <small>
-        <time>{date}</time>
+        <time>{body}</time>
       </small>
-      {categories.map((category) => (
+      {/* {categories.map((category) => (
         <small key={category}>{category}</small>
-      ))}
+      ))} */}
     </li>
   )
 }
